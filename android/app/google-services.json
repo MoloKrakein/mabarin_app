@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "148935883756",
+    "project_id": "mabarin-c1d84",
+    "storage_bucket": "mabarin-c1d84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148935883756:android:0714815111442675d79ec9",
+        "android_client_info": {
+          "package_name": "com.example.mabarin_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLlL1u0zf_PZvC87-Q7nqg2GX3cVQ6M4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
