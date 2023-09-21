@@ -118,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 }
 
                 if (snapshot.connectionState == ConnectionState.done) {
-                  return Text('Firebase Connected');
+                  return const Text('Firebase Connected');
                 }
 
                 return const CircularProgressIndicator();
