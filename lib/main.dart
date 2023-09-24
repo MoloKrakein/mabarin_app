@@ -21,15 +21,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: welcome_screen,
+      initialRoute: 'welcome',
       routes: {
-        'welcome_screen':(context) => WelcomeScreen(),
-        'regis_screen':(context) => RegisterForm(),
-        'login_screen':(context) => Login(),
-        'home_screen':(context) => Home(),
-  //check i
+        'welcome': (context) => WelcomeScreen(),
+        'regis_screen': (context) => RegisterForm(),
+        // 'login_screen':(context) => Login(),
+        // 'home_screen':(context) => Home(),
+        //check i
       },
-    )
+    );
   }
 }
 
