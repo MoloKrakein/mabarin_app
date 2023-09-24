@@ -91,8 +91,8 @@ class _RegisterFormState extends State<RegisterForm> {
                         height: 24.0,
                       ),
                       RoundedButton(
-                        title: 'Register',
                         color: Colors.blueAccent,
+                        title: 'Register',
                         onPressedInput: () async {
                           setState(() {
                             showSpinner = true;
@@ -104,14 +104,14 @@ class _RegisterFormState extends State<RegisterForm> {
                             if (newUser != null) {
                               Navigator.pushNamed(context, 'home_screen');
                             }
-                            setState(() {
-                              showSpinner = false;
-                            });
                           } catch (e) {
                             print(e);
                           }
+                          setState(() {
+                            showSpinner = false;
+                          });
                         },
-                      ),
+                      )
                     ],
                   );
                 } else {
