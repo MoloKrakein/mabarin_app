@@ -90,9 +90,33 @@ class _RegisterFormState extends State<RegisterForm> {
                       SizedBox(
                         height: 24.0,
                       ),
-                      MaterialButton(
-                        color: Colors.blueAccent,
-                        child: Text('Register'),
+                      // MaterialButton(
+                      //   color: Colors.blueAccent,
+                      //   child: Text('Register'),
+                      //   onPressed: () async {
+                      //     setState(() {
+                      //       showSpinner = true;
+                      //     });
+                      //     try {
+                      //       final newUser =
+                      //           await _auth.createUserWithEmailAndPassword(
+                      //         email: email,
+                      //         password: password,
+                      //       );
+                      //       if (newUser != null) {
+                      //         // Navigator.pushNamed(context, 'register');
+                      //       }
+                      //     } catch (e) {
+                      //       print(e);
+                      //     }
+                      //     setState(() {
+                      //       showSpinner = false;
+                      //     });
+                      //   },
+                      // ),
+                      RoundedButton(
+                        colour: Colors.blueAccent,
+                        title: 'Register',
                         onPressed: () async {
                           setState(() {
                             showSpinner = true;
@@ -100,9 +124,7 @@ class _RegisterFormState extends State<RegisterForm> {
                           try {
                             final newUser =
                                 await _auth.createUserWithEmailAndPassword(
-                              email: email,
-                              password: password,
-                            );
+                                    email: email, password: password);
                             if (newUser != null) {
                               // Navigator.pushNamed(context, 'register');
                             }
@@ -113,30 +135,7 @@ class _RegisterFormState extends State<RegisterForm> {
                             showSpinner = false;
                           });
                         },
-                      ),
-                      //   RoundedButton(
-                      //     color: Colors.blueAccent,
-                      //     title: 'Register',
-                      //     onPressedInput: () async {
-                      //       setState(() {
-                      //         showSpinner = true;
-                      //       });
-                      //       try {
-                      //         final newUser =
-                      //             await _auth.createUserWithEmailAndPassword(
-                      //                 email: email, password: password);
-                      //         if (newUser != null) {
-                      //           // Navigator.pushNamed(context, 'register');
-                      //         }
-                      //       } catch (e) {
-                      //         print(e);
-                      //       }
-                      //       setState(() {
-                      //         showSpinner = false;
-                      //       });
-                      //     },
-                      //   )
-                      //
+                      )
                     ],
                   );
                 } else {

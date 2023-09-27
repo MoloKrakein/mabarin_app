@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: 'regis_screen',
+      initialRoute: 'welcome',
       routes: {
         'welcome': (context) => WelcomeScreen(),
         'regis_screen': (context) => RegisterForm(),
